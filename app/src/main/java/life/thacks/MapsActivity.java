@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -205,6 +206,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 launchProfile();
                 return true;
             case R.id.settings:
+                Toast.makeText(this, "Unsupported", Toast.LENGTH_SHORT).show();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
