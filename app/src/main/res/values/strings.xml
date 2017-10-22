@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">THacks</string>
+    <string name="title_activity_maps">Risk Scan Radius</string>
+    <string name="title_activity_profile">Profile</string>
+</resources>

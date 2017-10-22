@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="life.thacks.ProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#4897e5"
+            android:elevation="4dp"
+            android:textColor="#ffffff"
+            android:theme="@style/ToolbarTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="426dp"
+                android:adjustViewBounds="false"
+                app:srcCompat="@drawable/john" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="-19dp"
+                android:textSize="30dp"
+                android:text="Steve Smith"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:text="Steve Smith" />
+            <TextView
+                android:id="@+id/certifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:text="Standard First Aid - May 4, 2017"
+                android:textColor="#2F83FF"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:text="Steve Smith" />
+
+            <TextView
+                android:id="@+id/medhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:textSize="20dp"
+                android:text="Medical Conditions"
+                android:textStyle="bold"
+                android:textColor="#FF2F2F"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:text="Steve Smith" />
+
+            <TextView
+                android:id="@+id/med"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                android:textSize="16dp"
+                android:text="•Anaphylactic\n•Epileptic"
+                android:textColor="#FF2F2F"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:text="Steve Smith" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
